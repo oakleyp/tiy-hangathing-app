@@ -1,0 +1,181 @@
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address,big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul,li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed,figure, figcaption,footer, header, hgroup,menu, nav, output, ruby, section, summary,time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}article, aside, details, figcaption, figure,footer,header, hgroup, menu, nav, section {display: block;}body {line-height: 1;}ol, ul{list-style: none;}blockquote, q {quotes: none;}blockquote:before, blockquote:after,q:before, q:after {content: "";content: none;}table {border-collapse: collapse;border-spacing: 0;}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    text-align: center;
+}
+
+a, a:active {
+    color: dodgerblue;
+}
+
+.menu-header {
+    margin-top: 3vh;
+    padding: 1vh 2vw;
+}
+
+.menu-header h1 {
+    font-size: 1.5em;
+}
+
+.menu-container {
+    background: #333;
+    margin: 3vh 5vw;
+    height: 85vh;
+    border-radius: 20px;
+}
+
+#menu-form {
+    padding: 2vh 2vw;
+}
+
+#menu-form-head {
+    background: #666;
+    padding: 1% 2%;
+    font-size: 1.5em;
+    margin-bottom: 2vh;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+#menu-form-head p {
+    color: #FFF;
+}
+
+#menu-form #difficulty-label {
+    margin-bottom: 2vh;
+    color: #FFF;
+}
+
+#menu-form label {
+    color: #fff;
+    margin-right: 10%;
+}
+
+#menu-form label:nth-of-type(3) {
+    margin: 0;
+}
+
+#options-container {
+    margin-bottom: 3vh;
+}
+
+#menu-form #ascii-box-label {
+    color: #FFF;
+}
+
+#menu-form #ascii-box {
+    margin: 2vh 0;
+    margin-bottom: 3vh;
+    height: 40vh;
+    width: 50%;
+    font-size: 1.3em;
+}
+
+#startbtn {
+    width: 50%;
+    padding: 1%;
+    margin-top: 1vh;
+    border-radius: 5px;
+    font-size: 1.5em;
+    background: #666;
+    transition-duration: 0.5s;
+}
+
+#startbtn:hover {
+    background: #999;
+}
+
+.game-container {
+    background: #333;
+    margin: 3vh 2vw;
+    padding: 2vh 2vw;
+    height: 90vh;
+}
+
+#display-container-head {
+    display: flex;
+    margin-bottom: 3vh;
+}
+
+#display-container-head h2,
+#display-container-head span {
+    color: #FFF;
+    
+}
+
+#display-container-head h2, #display-container-head span{
+    width: 100%;
+}
+
+#display-container-body {
+    background: #fff;
+    background: #FFF;
+    font-size: 1.8em;
+    padding: 2vh 2vw;
+    margin-bottom: 4vh;
+    height: 70%;
+}
+
+#display-container-body #ascii-box {
+    margin-bottom: 5vh;
+    line-height: 1;
+    font-size: 0.8em;
+    height: 70%;
+}
+
+#current-word {
+    font-size: 1.8em;
+    margin-bottom: 3vh;
+    letter-spacing: 5px;
+}
+
+.missedchars {
+    display: block;
+}
+
+#guess-container {
+    margin-bottom: 2vh;
+}
+
+.guesschar {
+    padding: 0.5% 1%;
+    font-size: 1.1em;
+    background: #333;
+    color: #fff;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+.guesschar:hover {
+    background: #999;
+}
+
+#available-container {
+    margin-bottom: 2vh;
+}
+
+#available-container span {
+    margin-right: 1%;
+    font-size: 1.1em;
+    color: #fff;
+}
+
+#available-container:last-child {
+    margin: 0;
+}
+
+#used-container span {
+    margin-right: 1%;
+    color: #FFF;
+}
+
+#used-container:last-child {
+    margin: 0;
+}
+
+#error {
+    color: #FFF;
+}
+
+

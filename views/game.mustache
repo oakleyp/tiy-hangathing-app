@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="/css/styles.css">
+
+
+    <title>Node Hang-A-Thing</title>
+
+</head>
+
+<body>
+    
+    <section class="game-container">
+        <div id="display-container-head">
+            <h2>Node Hang-A-Thing</h2>
+            {{{ guesstext }}}
+            <span class="guessesleft">{{guessesleft}} guesses remaining</span>
+        </div>
+        <div id="display-container-body">
+            <p id="ascii-box">{{{ ascii_display }}}</p>
+            <p id="current-word">{{ word_display }}</p>
+            {{{ missedchars }}}
+        </div>
+        
+        <div id="guess-container">
+            <div id="available-container">
+                {{#availablechars}}
+                    <button class="guesschar">{{.}}</button>
+                {{/availablechars}}
+            </div>
+            <div id="used-container">
+                <span id="used-label">Used Letters:</span>
+                {{#usedchars}}
+                    <span class="usedchar">{{.}}</span>
+                {{/usedchars}}
+            </div>
+            
+        </div>
+    </section>
+
+
+    <script type="text/javascript" src="/js/game.js"></script>
+
+</body>
+
+</html>
