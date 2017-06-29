@@ -227,7 +227,7 @@ app.post('/game', function (req, res) {
             gamevars.guesstext = '<span class="guesstext">You\'ve already tried that character, guess again</span>';
         } else {
             //Tell the user to just go home
-            gamevars.guesstext = '<span class="guesstext">You\'re game is over. <a href="/">Go home.</a></span>';
+            gamevars.guesstext = '<span class="guesstext">Your game is over. <a href="/">Go home.</a></span>';
         }
         
         gamevars.availablechars = getAvailableChars(req);
